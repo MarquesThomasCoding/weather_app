@@ -21,6 +21,11 @@ struct HomeView: View {
                 .aspectRatio(contentMode: .fill)
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .ignoresSafeArea()
+            if let condition = weatherViewModel.weather?.current.condition.text,
+               condition.lowercased().contains("rain") {
+                RainView()
+                    .ignoresSafeArea()
+            }
             VStack {
                 HStack {
                     if let location = weatherViewModel.weather?.location {
