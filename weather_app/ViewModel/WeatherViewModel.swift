@@ -14,6 +14,76 @@ class WeatherViewModel {
     var isLoading = false
     var errorMessage: String?
     
+    var backgroundImage: ImageResource {
+        guard let astro = weather?.forecast.forecastday.first?.astro else {
+            return getBackgroundImageByHour()
+        }
+        
+        let tzIdentifier = weather?.location.tz_id ?? "Europe/Paris"
+        let localDate = getDate(for: tzIdentifier)
+        
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: localDate)
+        let minute = calendar.component(.minute, from: localDate)
+        let currentMinutes = hour * 60 + minute
+        
+        if let sunriseMinutes = parseTimeToMinutes(astro.sunrise),
+           abs(currentMinutes - sunriseMinutes) <= 30 {
+            return Images.backgroundLeverDeSoleil
+        }
+        
+        if let sunsetMinutes = parseTimeToMinutes(astro.sunset),
+           abs(currentMinutes - sunsetMinutes) <= 30 {
+            return Images.backgroundLeverDeSoleil
+        }
+        
+        return getBackgroundImageByHour(date: localDate)
+    }
+    
+    private func getDate(for timeZoneID: String) -> Date {
+        guard let tz = TimeZone(identifier: timeZoneID) else { return Date() }
+        let secondsFromGMT = tz.secondsFromGMT(for: Date())
+        return Date(timeIntervalSinceNow: TimeInterval(secondsFromGMT - TimeZone.current.secondsFromGMT()))
+    }
+    
+    private func getBackgroundImageByHour(date: Date = Date()) -> ImageResource {
+        let hour = Calendar.current.component(.hour, from: date)
+        
+        switch hour {
+        case 0...3:
+            return Images.backgroundMidnight
+        case 4...6:
+            return Images.backgroundAube
+        case 7...17:
+            return Images.backgroundDay
+        case 18...20:
+            return Images.backgroundCrepuscule
+        case 21...23:
+            return Images.backgroundNight
+        default:
+            return Images.backgroundDay
+        }
+    }
+    
+    private func parseTimeToMinutes(_ timeString: String) -> Int? {
+        let components = timeString.components(separatedBy: " ")
+        guard components.count == 2 else { return nil }
+        
+        let timeParts = components[0].components(separatedBy: ":")
+        guard timeParts.count == 2,
+              var hour = Int(timeParts[0]),
+              let minute = Int(timeParts[1]) else { return nil }
+        
+        let isPM = components[1].uppercased() == "PM"
+        if isPM && hour != 12 {
+            hour += 12
+        } else if !isPM && hour == 12 {
+            hour = 0
+        }
+        
+        return hour * 60 + minute
+    }
+    
     func fetchWeather(for city: String = "Nanterre", days: Int = 3) async {
         isLoading = true
         defer { isLoading = false }
@@ -55,3 +125,4 @@ class WeatherViewModel {
         }
     }
 }
+
