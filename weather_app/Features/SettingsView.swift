@@ -9,10 +9,8 @@ import SwiftUI
 import DesignSystem
 
 struct SettingsView: View {
+    @State var weatherViewModel = WeatherViewModel()
     @AppStorage("isCelsius") private var isCelsius: Bool = true
-    @AppStorage("selectedLanguage") private var selectedLanguage: String = "lang.french"
-    
-    let languages = ["lang.french", "lang.english"]
     
     init() {
         UITableView.appearance().backgroundColor = .clear
@@ -21,7 +19,10 @@ struct SettingsView: View {
     
     var body: some View {
         ZStack {
-            gradientDarkBlueToSkyBlue
+            Image(Images.backgroundLeverDeSoleil)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .ignoresSafeArea()
             
             Form {
@@ -31,24 +32,12 @@ struct SettingsView: View {
                             Text("settings.usecelsius")
                         }
                     }
-                })
-                .listRowBackground(Color.clear)
-                
-                Card(content: {
-                    Section(header: Text("settings.lang")) {
-                        Picker("settings.applang", selection: $selectedLanguage) {
-                            ForEach(languages, id: \.self) { lang in
-                                Text(lang)
-                            }
-                        }
-                        .pickerStyle(SegmentedPickerStyle())
-                    }
+                    .foregroundStyle(.white)
                 })
                 .listRowBackground(Color.clear)
             }
             .scrollContentBackground(.hidden)
         }
-        .foregroundStyle(.white)
     }
 }
 
