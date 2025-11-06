@@ -29,12 +29,12 @@ class WeatherViewModel {
         
         if let sunriseMinutes = parseTimeToMinutes(astro.sunrise),
            abs(currentMinutes - sunriseMinutes) <= 30 {
-            return Images.backgroundLeverDeSoleil
+            return .backgroundLeverDeSoleil
         }
         
         if let sunsetMinutes = parseTimeToMinutes(astro.sunset),
            abs(currentMinutes - sunsetMinutes) <= 30 {
-            return Images.backgroundLeverDeSoleil
+            return .backgroundLeverDeSoleil
         }
         
         return getBackgroundImageByHour(date: localDate)
@@ -51,17 +51,17 @@ class WeatherViewModel {
         
         switch hour {
         case 0...3:
-            return Images.backgroundMidnight
+            return .backgroundMidnight
         case 4...6:
-            return Images.backgroundAube
+            return .backgroundAube
         case 7...17:
-            return Images.backgroundDay
+            return .backgroundDay
         case 18...20:
-            return Images.backgroundCrepuscule
+            return .backgroundCrepuscule
         case 21...23:
-            return Images.backgroundNight
+            return .backgroundNight
         default:
-            return Images.backgroundDay
+            return .backgroundDay
         }
     }
     
@@ -115,14 +115,26 @@ class WeatherViewModel {
     
     func moonPhaseImage(from apiPhase: String) -> ImageResource {
         switch apiPhase {
-        case "New Moon": return Images.newMoon
-        case "Waxing Crescent": return Images.waxingCrescent
-        case "First Quarter": return Images.firstQuarter
-        case "Waxing Gibbous": return Images.waxingGibbous
-        case "Full Moon": return Images.fullMoon
-        case "Waning Gibbous": return Images.waningGibbous
-        default: return Images.fullMoon
+        case "New Moon": return .newMoon
+        case "Waxing Crescent": return .waxingCrescent
+        case "First Quarter": return .firstQuarter
+        case "Waxing Gibbous": return .waxingGibbous
+        case "Full Moon": return .fullMoon
+        case "Waning Gibbous": return .waningGibbous
+        default: return .fullMoon
         }
     }
 }
 
+func formattedTemperature(_ current: CurrentWeather, isCelsius: Bool) -> String {
+    let temp = isCelsius ? current.temp_c : current.temp_f
+    return String(format: "%.1f°%@", temp, isCelsius ? "C" : "F")
+}
+
+func localizedCondition(_ condition: Condition) -> String {
+    NSLocalizedString(condition.text, comment: "")
+}
+
+func iconForCondition(_ text: String) -> ImageResource {
+    Images.fromConditionIcon(text)
+}
