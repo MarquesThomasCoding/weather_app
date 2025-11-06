@@ -42,9 +42,11 @@ struct HomeView: View {
                             let temp = isCelsius ? current.temp_c : current.temp_f
                             HStack {
                                 Card(content: {
+                                    let localizedCurrentWeatherText = NSLocalizedString(current.condition.text, comment: "")
+                                    
                                     Text("\(String(format: "%.1f", temp)) °\(isCelsius ? "C" : "F")")
                                         .font(.largeTitle)
-                                    Text(current.condition.text)
+                                    Text(localizedCurrentWeatherText)
                                 })
                                 Spacer()
                                 Image(Images.fromConditionIcon(current.condition.text))
@@ -129,7 +131,8 @@ struct HomeView: View {
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 96, height: 96)
-                                            Text("\(day.astro.moon_phase)")
+                                            let localizedMoonPhase = NSLocalizedString(day.astro.moon_phase, comment: "")
+                                            Text("\(localizedMoonPhase)")
                                                 .foregroundStyle(.secondary)
                                                 .font(.footnote)
                                         }

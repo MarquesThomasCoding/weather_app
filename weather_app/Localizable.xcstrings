@@ -100,6 +100,28 @@
         }
       }
     },
+    "Blizzard" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blizzard"
+          }
+        }
+      }
+    },
+    "Blowing snow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neige soufflée"
+          }
+        }
+      }
+    },
     "city.entercitylabel" : {
       "localizations" : {
         "en" : {
@@ -128,6 +150,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valider"
+          }
+        }
+      }
+    },
+    "Cloudy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cloudy"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuageux"
           }
         }
       }
@@ -228,6 +267,105 @@
         }
       }
     },
+    "First Quarter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premier quart"
+          }
+        }
+      }
+    },
+    "Fog" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brouillard"
+          }
+        }
+      }
+    },
+    "Freezing drizzle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruine verglaçante"
+          }
+        }
+      }
+    },
+    "Freezing fog" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brouillard givrant"
+          }
+        }
+      }
+    },
+    "Full Moon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pleine lune"
+          }
+        }
+      }
+    },
+    "Heavy freezing drizzle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forte bruine verglaçante"
+          }
+        }
+      }
+    },
+    "Heavy rain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie forte"
+          }
+        }
+      }
+    },
+    "Heavy rain at times" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie forte par moments"
+          }
+        }
+      }
+    },
+    "Heavy snow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neige forte"
+          }
+        }
+      }
+    },
     "home.gotocity" : {
       "localizations" : {
         "en" : {
@@ -277,6 +415,17 @@
         }
       }
     },
+    "Ice pellets" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grêle"
+          }
+        }
+      }
+    },
     "lang.english" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -311,13 +460,283 @@
         }
       }
     },
-    "Partly Cloudy" : {
+    "Last Quarter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernier quart"
+          }
+        }
+      }
+    },
+    "Light drizzle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruine légère"
+          }
+        }
+      }
+    },
+    "Light freezing rain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie verglaçante légère"
+          }
+        }
+      }
+    },
+    "Light rain" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Partly Cloudy"
+            "value" : "Light rain"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie légère"
+          }
+        }
+      }
+    },
+    "Light rain shower" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Averse légère"
+          }
+        }
+      }
+    },
+    "Light showers of ice pellets" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Averses légères de grêle"
+          }
+        }
+      }
+    },
+    "Light sleet" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grésil léger"
+          }
+        }
+      }
+    },
+    "Light sleet showers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Averses légères de grésil"
+          }
+        }
+      }
+    },
+    "Light snow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neige légère"
+          }
+        }
+      }
+    },
+    "Light snow showers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Averses légères de neige"
+          }
+        }
+      }
+    },
+    "Mist" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brume"
+          }
+        }
+      }
+    },
+    "Moderate or heavy freezing rain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie verglaçante modérée ou forte"
+          }
+        }
+      }
+    },
+    "Moderate or heavy rain shower" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Averse modérée ou forte"
+          }
+        }
+      }
+    },
+    "Moderate or heavy rain with thunder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie modérée ou forte avec orage"
+          }
+        }
+      }
+    },
+    "Moderate or heavy showers of ice pellets" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Averses modérées ou fortes de grêle"
+          }
+        }
+      }
+    },
+    "Moderate or heavy sleet" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grésil modéré ou fort"
+          }
+        }
+      }
+    },
+    "Moderate or heavy sleet showers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Averses modérées ou fortes de grésil"
+          }
+        }
+      }
+    },
+    "Moderate or heavy snow showers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Averses modérées ou fortes de neige"
+          }
+        }
+      }
+    },
+    "Moderate or heavy snow with thunder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neige modérée ou forte avec orage"
+          }
+        }
+      }
+    },
+    "Moderate rain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie modérée"
+          }
+        }
+      }
+    },
+    "Moderate rain at times" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie modérée par moments"
+          }
+        }
+      }
+    },
+    "Moderate snow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neige modérée"
+          }
+        }
+      }
+    },
+    "New Moon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle lune"
+          }
+        }
+      }
+    },
+    "Overcast" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couvert"
+          }
+        }
+      }
+    },
+    "Partly cloudy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partly cloudy"
           }
         },
         "fr" : {
@@ -328,36 +747,134 @@
         }
       }
     },
-    "settings.applang" : {
-      "extractionState" : "stale",
+    "Patchy freezing drizzle possible" : {
+      "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Application language"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Langue de l’application"
+            "value" : "Bruine verglaçante éparse possible"
           }
         }
       }
     },
-    "settings.lang" : {
-      "extractionState" : "stale",
+    "Patchy heavy snow" : {
+      "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Language"
-          }
-        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Langue"
+            "value" : "Neige forte éparse"
+          }
+        }
+      }
+    },
+    "Patchy light drizzle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruine légère éparse"
+          }
+        }
+      }
+    },
+    "Patchy light rain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie légère éparse"
+          }
+        }
+      }
+    },
+    "Patchy light rain with thunder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie légère éparse avec orage"
+          }
+        }
+      }
+    },
+    "Patchy light snow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neige légère éparse"
+          }
+        }
+      }
+    },
+    "Patchy light snow with thunder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neige légère éparse avec orage"
+          }
+        }
+      }
+    },
+    "Patchy moderate snow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neige modérée éparse"
+          }
+        }
+      }
+    },
+    "Patchy rain nearby" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie éparse à proximité"
+          }
+        }
+      }
+    },
+    "Patchy sleet possible" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grésil éparse possible"
+          }
+        }
+      }
+    },
+    "Patchy snow possible" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neige éparse possible"
+          }
+        }
+      }
+    },
+    "Rain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pluie"
           }
         }
       }
@@ -407,6 +924,72 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ensoleillé"
+          }
+        }
+      }
+    },
+    "Thundery outbreaks possible" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orages possibles"
+          }
+        }
+      }
+    },
+    "Torrential rain shower" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Averse torrentielle"
+          }
+        }
+      }
+    },
+    "Waning Crescent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dernier croissant"
+          }
+        }
+      }
+    },
+    "Waning Gibbous" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gibbeuse décroissante"
+          }
+        }
+      }
+    },
+    "Waxing Crescent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Croissant de lune"
+          }
+        }
+      }
+    },
+    "Waxing Gibbous" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gibbeuse croissante"
           }
         }
       }
