@@ -27,7 +27,7 @@ struct HomeView: View {
                     .ignoresSafeArea()
             }
             VStack {
-                WeatherHeader(weatherViewModel: weatherViewModel, selectedCity: selectedCity)
+                WeatherHeader(weatherViewModel: weatherViewModel, selectedCity: $selectedCity)
                 if let current = weatherViewModel.weather?.current {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 20) {

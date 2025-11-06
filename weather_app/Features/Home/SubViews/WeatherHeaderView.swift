@@ -10,7 +10,7 @@ import DesignSystem
 
 struct WeatherHeader: View {
     var weatherViewModel: WeatherViewModel
-    @Binding var selectedCity: String = "Nanterre"
+    @Binding var selectedCity: String
     
     var body: some View {
         HStack {
