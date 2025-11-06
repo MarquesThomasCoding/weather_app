@@ -11,7 +11,7 @@ import DesignSystem
 struct WeatherCurrentView: View {
     var current: CurrentWeather
     @Binding var isCelsius: Bool
-    @State var temp: Double = 0
+    var temp: Double = 0
     
     var body: some View {
         HStack {

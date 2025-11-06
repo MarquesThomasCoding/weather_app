@@ -19,7 +19,7 @@ struct SettingsView: View {
     
     var body: some View {
         ZStack {
-            Image(Images.backgroundLeverDeSoleil)
+            Image(.backgroundLeverDeSoleil)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
