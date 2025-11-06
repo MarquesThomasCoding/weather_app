@@ -9,8 +9,9 @@ import SwiftUI
 import DesignSystem
 
 struct SearchCityView: View {
+    @State var weatherViewModel = WeatherViewModel()
     @State private var cityViewModel = CityViewModel()
-    @AppStorage("selectedCity") private var selectedCity: String = ""
+    @AppStorage("selectedCity") private var selectedCity: String = "Nanterre"
     @Environment(\.dismiss) private var dismiss
     
     init() {
@@ -20,11 +21,14 @@ struct SearchCityView: View {
 
     var body: some View {
         ZStack {
-            gradientDarkBlueToSkyBlue
+            Image(Images.backgroundCrepuscule)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                 .ignoresSafeArea()
+            
             VStack {
-                TextField("city.entercitylabel", text: $selectedCity)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                SearchField("city.entercitylabel", text: $selectedCity)
                     .padding()
                     .onChange(of: selectedCity) { oldValue, newValue in
                         Task {
